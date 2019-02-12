@@ -33,9 +33,9 @@ else
     echo 
     while true
     do
-        read -s -p "Enter the fqdn for your domain: " certbotfqdn
+        read -p "Enter the fqdn for your domain: " certbotfqdn
         echo
-        read -s -p "Confirm the fqdn for your domain: " certbotfqdn2
+        read -p "Confirm the fqdn for your domain: " certbotfqdn2
         echo
         [ "$certbotfqdn" = "$certbotfqdn2" ] && break
         echo "Passwords don't match. Please try again."
@@ -44,9 +44,9 @@ else
     echo
     while true
     do
-        read -s -p "Enter your email address: " certbotemail
+        read -p "Enter your email address: " certbotemail
         echo
-        read -s -p "Confirm your email address: " certbotemail2
+        read -p "Confirm your email address: " certbotemail2
         echo
         [ "$certbotemail" = "$certbotemail2" ] && break
         echo "Passwords don't match. Please try again."
